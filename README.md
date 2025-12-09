@@ -6,7 +6,7 @@ so some typos to avoid key word search hits .. i think 1/4 of all network hits a
 In claude:
   a pinn transformer model: physics informed neural network using the fluid flow equations (volterra/Stokes/) is now a standard in aerodynamic simulations. Is there a combinatoric informed neural network to train on data from a urn model w/o replacement? hypergeometric distribution is known; the urn model draws are random against that dist ... your training on that data to determine a range of next state draws on that urn model. write a pytorch transformer model for that prediction
   
-In google aistudio console which is gemini3.5-pro-preview: same thing prompt but this time ask for tensorflow python code
+In google aistudio console which is gemini3-pro-preview(cli is still 2.5): same thing prompt but this time ask for tensorflow python code
 
 in copilot a lot of gibberish .. but i'm only on the browser maybe the paid-for-chatgpt access is different .. i almost never use copilot except in vs2022/25
 
