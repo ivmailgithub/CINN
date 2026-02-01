@@ -1,0 +1,79 @@
+in honor to these guys: https://www.youtube.com/watch?v=EV7WhVT270Q
+20260201 notes from the past month ... as i review it mostly a rant and not worth reading.. some of my notes are just for me but some other random stuff...
+
+
+
+webspiders_apiendpoints_prompts.txt ====================20251229 turn on wordwrap
+
+so it takes experience to have the discipline to NOT BE A PIG and piss in the pool so that others swim in your....
+
+50 years ago the public disclosure boiler plate went something like:  During business hours the public  may view the history of gambling game results at .. blah blah....  on paper.  I was once in a business where contractors were paid to actually physically walk into the recorder's office of every county in the country and take notes on recent real estate transactions.  they faxed their notes to eq-fax ... Three mortgages on a property at the same time was kind of no no...and the fix was to wait a month for the data to trickle in and hope it wasn't fraud.  Every gaming commission in every state with regulated gamling has public disclosure requirements.  But audits are done by 3rd party contracts from accounting firms paying for lunch not the public. XpertX has been around for at least 20 years for filling a minimum public disclosure requirement with the last tech boom/bust the internet and web1.0.  I once looked up webtracker data and 1/3 of the traffic on their sites turned out to be my spiders ....me not customers. 
+
+Then web2.0 and big data and big money ... and suddenly every company thought their data was gold not garbage ... that's what you told the boss and investors.  
+
+Web3.0 and AI comes along steals all your data and they game the courts to say it is fair use.  As gamerNexus commented: you on the other hand get cease and desist letters from pissed off about to be unemployed lawyers set to be replaced by ai bots who got to get some billable time...
+
+There is a real DOS attack concerns.  Every weirdo 300 lb fatso trumplicann sitting on a sofa will wget * your site and i can hear the security guys now proclaiming how they have intercepted attacks with their $1000k hardware and $100k annual support contracts and contractors....as they put the guy on sofa on retainer
+
+And of course if you have been in the big data industry in the past 15 years the rush to grab data to feed the ai monster in the basement has spawn an industry to create fake intermediate ip addresses to fool the blocks and let the spiders roam.  People and startups with no legal staff's just ignorant programmers have stepped all over and pissed everywhere thinking this is a web4.0 world and zuck bought a fair use decision..... and if the hits generated ad pennies i didn't knnow....
+
+and now we got ignorant ai programmers ...
+
+so no i'm not publishing scripts ... i am making comments on the prompts and the api endpoints discovered .. some by ai some by my reading the jquery which oddly none of the ai engines actually did .. maybe in gemini/claude v4/5..
+
+There are ways to make the api endpoints internal microservices so you end up with playwright or selenium.  If your using the backend api please don't blast away and take down the little box sitting under someone's desk.
+
+None of this touches the actual database and as the recent heartbleed mongo xmas attack shows .. you don't want to be around when the feds are auditing the logs....your just the 300lb trumplican on the sofa watching football....good game last night and you got to ask why are the games constructed good now instead of blowouts?  Is it statistically valid??
+
+CVE-2025-14847 - MongoDB Unauthenticated Memory Leak Exploit 
+and looking at https://www.youtube.com/watch?v=9Wg6tiaar9M and the sample code at https://github.com/joe-desimone/mongobleed
+the use of json zip is exactly this api endpoint package except we are receiving not sending the json....but still i don't want to be around until they patch their mongo's...and i seriously doubt any stoggie state/gov gaming company is using mongodb unless the contract went to the guys with the pony tails...
+
+but time to hide under a rock for a month and work on something else.
+
+
+prompt: find the api endpoints for http:// .....
+actually you get a bunch of ad api calls which sit at the front but sometimes it will find the site microservice dishing up the data.  then you can unminify various js code you see in chromeDEV and read what is what...
+
+so i have a note at top readme.md about how ai created a script in a few minutes ... actually those first hour scripts never worked.  And as you vibe coded to a working script 2/3's of the time you would get lost in a hole repeating the same ai nonsense.  Find the key than prompt around that key fix to move forward.  Both gemini and claude have a fair amount of software engineering training data; they create logging, debugging traces .. exploring forms in playwright is a neat tool.  All of which would of taken me weeks of StackOverflow(SO) blog reading github searching to duplicate.  And it is done in a few minutes.  Of course sometimes it is totally wrong... i end up with a 500 mg node js app with 50k dependencies...
+
+i use duckdb for practice .. my main database is mariadb.  duckdb is interesting as a sqlite replacement ... i'm trying to figure out why lunar probes land on the moon at 60mph when apollo did it 50 years ago.... duckdb gps table shifted....a bad gis transform....60mph is a hard landing. my current theory is the duckdb.mysql driver is silently failing the where clause on large returns ... where 2 million rows not in just barfsilently
+
+i may try cleaning up the dataset to spec machine generated random draws and physical air blown ball machines for Kaggle later.
+
+As to the suspicion random outliers.... well there are a few; but i'll leave that to the professional auditors.  but why was last night's football game so good?
+
+20251230 i finally get why people are paying $200 a month for gpt4.1/4.2 .... cause i just spent 6 hours in a copilot console prompt which started with the prompt:
+what happened to import pytorch.distribution.Hypergeometric?   answer never there .. write your own.
+6 hours later a full k-e-n-o surveillance app  ... and i got to think surely this must come from a previous training data  and as i think about it ... china
+has banned github ... so grad student ai researchers must have their own version of github .. and k-e-n-o is a popular game in china with probably more internet versions than the rest of the world combined x10... so some students must of created some analytical app and a bunch of them must be in the training data.  And deepseek/zai/qwen might have better access than openai gpt.  Because in a 4000+ line chat and python sql code session a huge amount of analytic stuff pops up in the app which is never even mentioned in my prompts.  And when i ask copilot to tone down the fraud detection talk to avoid cease and desist letters ... a whole new layer of legal nicity pops up.  Now it isn't fraud it is "statistically unusual patterns"  This is a layer of microsoft copilot safety on a previously harsh fraud detection app .. which must be a thing in china...
+
+
+20260106
+well tn pa ks oh va scripts are running ... in 2 weeks maybe half a million draws each; rate limiting seems to kick in on one site but others are allowing the walk;
+xpertx rolled out k-eno-usa-com and possible replacement k-eno-usa-net site as a react dot net nightmare ... wack wack and still soap-api works and the same on the backend.  both gemini3 and claude45sonnet managed test scripts probing the api endpoint to make a working script
+
+and duckdb is turning into a nightmare of file locks on a win box.  copilot/gpt4.1 proposes a complete duckdb mariadb pipeline which is amazing .. planning devops 
+in the training data ... but as i test  the implementationn the parallel mariadb threads choke...where did this example come from?  A year ago duckdb was a ai joke .. it couldn't do anything .. now it is a complete devops framework which almost works too...there can't be that many good training examples of duckdb in prod...There have only been 2 examples of bad non-existant sql for duckdb and both of them were self fixed in the next prompt.  Last year it just stopped on postgres sql with a "not implemented"...now it works.
+
+i think/realize in the learning curve of ai vibe programming you stop naming the code gemini_xxxx, claude_xxxx, grok_xxxx, zai_xxx and go just xxx because even 99% aivibe code is now workable in prod... and a month of work instead of years . .. so how long will the freebie vib coding frameworks be around?  Discover AI youtuber quotinng 2025 surveys that coding models are only 4% of the market ... someone is going to duplicate the netscape IE wars and make it all free .. will it be china?
+will we get coke ads in the middle of your code like movies and games?
+
+in the learning curve of vibe programming you got to stop and build expertise even if it takes 10x longer...but the problem with that is expertise lasts like a month or two and then gone ... lucky to get 50% back in a year and then easily obsolete and replaced by new hotness and you wasted the time pretending your going for expertise .. when in reality your just tired of being beat by ai.  Remember just 6 months ago i was emailing the duckdb motherduck guys on why ai code was so bad ... and now 6 months later gpt4.1 is spitting out duckdb pipeline code with only  2 mistakes in the sql...
+20260107
+why did gemini3-pro-preview get better and better at generating web spiders?  In a week chat session the first spider worked and is running now but is terribly flawed ... it actually saves html txt to a huge duckdb table for only 700,000 rows inserting duplicate draws in to a 374m duckdb ... and the 9th spider in the chat is completing testing api detection diags .. one of which had an api sig key requirement which it supplied from the training data .. all in one 2 min chat cycle ... but tokens went up to half a million.  Did it get better by the context of 9 other spiders written in the history (context in my /chat save xx and later /chat resume xx) or did it do more research on web spiders different from the first prompt?  The only repeated errors are in regex and grep.  It forgot the duckdb force commit and summary counts ... of 10 sites all had little differences even when the same vendor supplied the state.  What tripped up gemini was the one per day game states instead of 350 per day.
+
+now copilot/gtp4.1 is now offering up research papers to write ... i wonder how many arxiv papers are ai generated now???  There have been several fake physics papers on arxiv ... fake math is about the same
+
+20260119 .. google flags my ip as robot traffic if i have to many spiders running now...
+
+
+=================to publish or not to publish to bear the slings and arrows of the crowd: fraudster, clown to be or not...are fractal GANs a thing?  A chaotic combinatoric adverserial fractal game for critical stocastic criticality? is the best protection publication amd expsure? there are over 200 dead journalist in GASA ; hardly protection==============
+
+so once again on 20251231@1400 i vote not to publish
+20260101@1200 vote no
+20260106 well closer to yes but not yet the traffic seems to be just ai spiders so really no reason to post now
+20260108 the rule is no to posting web spiders
+20260119 again i vote no this note does not contain useful info just my ranting
+
+20260201 vote post it .. and get back to work.. gemini 3 just erased 1200 huggingface/paperswithcode web get ... did write an api version of my script but still erasing 1200 arxiv papers is not good ... so i ask it to restore the dir and it is running now...
