@@ -1,1 +1,2 @@
-creating data dir for ..
+creating data dir for .. 20260206 attach to mariadb -> dump to duckdb and parquet
+strange the new gpt5.2 in copilot took 10 rounds to do a mariadb sql dump to a duckdb file dump and throws in parquet ... but 10 cycles of logic bugs .... code from pre duckdb10 with standard sql connect logic out of other sql python drivers ... which does not work for multiple connections of duckdb which can't see the original attach mysql conn ... after 7 tries it finally does a single connection and each run is a confident piece of prod code which is totally buggy.... run 10 finally works.
