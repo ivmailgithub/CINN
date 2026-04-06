@@ -29,3 +29,8 @@ detected a terms of use on the site and said nope...
 Anyway a few more sites to spider into duckdb and mariadb ... then a dataloader into the transformer models .. even 20 million rows encoded is doable on 
 a 32g vram gpu.
 
+20260406
+well i guess teo is right the lower 2 quantiles are cooked...
+huggingface-cli download Qwen/Qwen2.5-Coder-32B-Instruct --local-dir /workspace/models/qwen35-coder-32b-instruct
+and webui gets me a plusing icon for hours after a code prompt... 124g of memory used on the asus gx10 box...and i got ports messed up all over the place ... 3 clients reboot constantly to clear the ports.  I guess i got to try the quantized models now
+cinn training by the way takes 3 weeks on a rtx5090 box to move from 4.6 to 3.2 loss ... it pretty much is stuck; trying 16 layers instead of 4 now but it looks to be combinatorics is combinatorics .. it ain't going to converge.
