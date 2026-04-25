@@ -34,3 +34,9 @@ well i guess teo is right the lower 2 quantiles are cooked...
 huggingface-cli download Qwen/Qwen2.5-Coder-32B-Instruct --local-dir /workspace/models/qwen35-coder-32b-instruct
 and webui gets me a plusing icon for hours after a code prompt... 124g of memory used on the asus gx10 box...and i got ports messed up all over the place ... 3 clients reboot constantly to clear the ports.  I guess i got to try the quantized models now
 cinn training by the way takes 3 weeks on a rtx5090 box to move from 4.6 to 3.2 loss ... it pretty much is stuck; trying 16 layers instead of 4 now but it looks to be combinatorics is combinatorics .. it ain't going to converge.
+
+20260425
+well 24 layers and 32 layers throw a cuda memory error on a rtx5090 w/ 8 other small cuda pty loaded simulation jobs running .. blocksize 8192
+and takes up a full 32g memory and the shared gpu memory to 64g is actually used by the other jobs ... but throws cuda memory errors.  After 75 epochs crashed and i went back to 16 layers ... but both jobs do not converge loss pass 3.2; in
+fact they bounce off that and go to 3.4loss so real 554k rows of data; and 1.9 million rows both stuck at 3.2 loss.
+copilot is giving me the huggingface downloads for the asus gx10-gb10 and pulled down qwen36-35b-a3b and gemma4-27b- ... and i have to use copilot to make a template prompt to get python code for a simple combinatorics math prompt ... none of the freebie browser ai engines are that picky ...  i mean it is maybe 30 minutes with claude freebie ... or a few hours with local qwen; yeah i use up my freebie tokens but local ai is very picky...i thought the model was broken...and oddly copilot leads me out of the wilderness...
