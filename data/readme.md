@@ -1,3 +1,6 @@
 creating data dir for .. 20260206 attach to mariadb -> dump to duckdb and parquet
 strange the new gpt5.2 in copilot took 10 rounds to do a mariadb sql dump to a duckdb file dump and throws in parquet ... but 10 cycles of logic bugs .... code from pre duckdb10 with standard sql connect logic out of other sql python drivers ... which does not work for multiple connections of duckdb which can't see the original attach mysql conn ... after 7 tries it finally does a single connection and each run is a confident piece of prod code which is totally buggy.... run 10 finally works.
 20260513 switch over to gemini3flash and it rewrites my mariadb server with a statement "all legancy data will be lost"...wahttt!!???  Sure it was 20 year old schema never used ... but that is a few million rows flushed?  the new schema looks good for all these duckdb statekeno imports and it even wrote a kenousa loader of the 27 casinos in the web spiders...but i was 1 click away from agreeing to wipe all my data...
+
+
+20260521 kicked up a simplier duckdb exported out of mariadb
